@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FYNX | Elite Digital Agency</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#050814;--panel:rgba(255,255,255,.06);--panel2:rgba(255,255,255,.1);--line:rgba(255,255,255,.1);--text:#eaf0ff;--muted:#98a6bd;--blue:#2563eb;--cyan:#38bdf8;--purple:#8b5cf6}
+*{margin:0;padding:0;box-sizing:border-box;font-family:'Inter',sans-serif}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--text);line-height:1.65;overflow-x:hidden;-webkit-font-smoothing:antialiased}
+body:before{content:'';position:fixed;inset:0;background:radial-gradient(circle at 12% 12%,rgba(37,99,235,.25),transparent 24%),radial-gradient(circle at 90% 15%,rgba(56,189,248,.18),transparent 28%),radial-gradient(circle at 50% 95%,rgba(139,92,246,.18),transparent 30%);z-index:-2}
+body:after{content:'';position:fixed;inset:0;background-image:linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);background-size:70px 70px;mask-image:linear-gradient(to bottom,rgba(0,0,0,.8),transparent 75%);z-index:-1;pointer-events:none}
+a{text-decoration:none;color:inherit}.container{width:90%;max-width:1220px;margin:auto}
+header{position:fixed;top:0;width:100%;z-index:100;background:rgba(5,8,20,.62);backdrop-filter:blur(18px);border-bottom:1px solid var(--line)}
+nav{height:82px;display:flex;align-items:center;justify-content:space-between}.logo{font-size:30px;font-weight:900;letter-spacing:.7px;color:#fff}.logo span{color:var(--cyan)}
+.nav-links{display:flex;gap:30px}.nav-links a{color:var(--muted);font-weight:600;font-size:14px;position:relative}.nav-links a:after{content:'';position:absolute;left:0;bottom:-9px;width:0;height:2px;background:linear-gradient(90deg,var(--blue),var(--cyan));transition:.35s}.nav-links a:hover{color:#fff}.nav-links a:hover:after{width:100%}
+.btn{display:inline-flex;align-items:center;gap:10px;padding:14px 24px;border-radius:999px;font-weight:800;color:#fff;background:linear-gradient(135deg,var(--blue),var(--cyan));box-shadow:0 18px 45px rgba(37,99,235,.36);transition:.35s;border:0}.btn:hover{transform:translateY(-3px);box-shadow:0 26px 60px rgba(37,99,235,.48)}.btn.secondary{background:rgba(255,255,255,.07);border:1px solid var(--line);box-shadow:none}.btn.secondary:hover{background:rgba(255,255,255,.12)}
+.hero{min-height:100vh;padding:160px 0 90px;display:flex;align-items:center;position:relative}.hero:before{content:'FYNX';position:absolute;right:-20px;top:130px;font-size:180px;font-weight:900;letter-spacing:14px;color:rgba(255,255,255,.025)}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}.eyebrow{display:inline-flex;align-items:center;gap:10px;padding:10px 16px;border:1px solid rgba(56,189,248,.25);border-radius:999px;background:rgba(56,189,248,.08);color:#a7edff;font-size:13px;font-weight:900;margin-bottom:20px}
+h1{font-size:76px;line-height:.98;letter-spacing:-3.5px;color:#fff;margin-bottom:24px}.gradient{background:linear-gradient(135deg,#fff,#7dd3fc,#a78bfa);-webkit-background-clip:text;color:transparent}.hero p{font-size:20px;color:#b4c0d4;max-width:690px;margin-bottom:32px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.trust-row{display:flex;gap:22px;margin-top:34px;flex-wrap:wrap}.trust-item{color:#cbd5e1;font-weight:700;font-size:14px}.trust-item span{color:var(--cyan)}
+.hero-visual{position:relative;height:520px;border-radius:34px;padding:16px;background:linear-gradient(145deg,rgba(255,255,255,.16),rgba(255,255,255,.04));border:1px solid var(--line);box-shadow:0 40px 100px rgba(0,0,0,.48);overflow:hidden}.hero-visual img{width:100%;height:100%;object-fit:cover;border-radius:24px;filter:saturate(1.1) contrast(1.05)}.floating-card{position:absolute;background:rgba(5,8,20,.72);backdrop-filter:blur(16px);border:1px solid rgba(255,255,255,.12);border-radius:20px;padding:16px;box-shadow:0 20px 50px rgba(0,0,0,.34)}.fc1{left:28px;bottom:34px}.fc2{right:28px;top:34px}.floating-card strong{display:block;color:#fff}.floating-card small{color:#9fb0c8}
+section{padding:110px 0}.section-title{text-align:center;margin-bottom:60px}.section-title h2{font-size:46px;letter-spacing:-1.5px;color:#fff;margin-bottom:12px}.section-title p{color:var(--muted);max-width:760px;margin:auto;font-size:17px}.grid-2{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}.grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}.grid-4{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.glass{background:var(--panel);border:1px solid var(--line);border-radius:28px;box-shadow:0 30px 80px rgba(0,0,0,.22);transition:.35s}.glass:hover{transform:translateY(-8px);border-color:rgba(56,189,248,.42);background:var(--panel2)}.mini{padding:24px}.service{padding:42px;min-height:310px}.service .icon{width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--blue),var(--cyan));display:grid;place-items:center;font-size:26px;margin-bottom:22px}.service h3{font-size:28px;color:#fff;margin-bottom:12px}.service p,.mini p,.case p,.testimonial p{color:#b2bfd3}.list{list-style:none;margin-top:20px}.list li{padding:7px 0;color:#dce6f8}.list li:before{content:'✓';color:var(--cyan);font-weight:900;margin-right:10px}
+.showcase{display:grid;grid-template-columns:1.15fr .85fr;gap:24px}.shot{position:relative;overflow:hidden;border-radius:30px;border:1px solid var(--line);box-shadow:0 30px 80px rgba(0,0,0,.35)}.shot img{width:100%;height:100%;object-fit:cover;display:block;transition:.6s}.shot:hover img{transform:scale(1.06)}.shot.big{height:500px}.shot.small{height:238px;margin-bottom:24px}.shot:after{content:attr(data-label);position:absolute;left:22px;bottom:22px;background:rgba(5,8,20,.76);backdrop-filter:blur(14px);border:1px solid rgba(255,255,255,.1);padding:12px 16px;border-radius:14px;color:#fff;font-weight:800}
+.process-card{padding:30px}.process-card span{display:inline-flex;width:44px;height:44px;border-radius:14px;background:#fff;color:#050814;align-items:center;justify-content:center;font-weight:900;margin-bottom:18px}.process-card h3{margin-bottom:8px;color:#fff}.metrics .glass{text-align:center;padding:28px}.metrics strong{font-size:36px;color:#fff;display:block}.metrics span{color:var(--muted);font-weight:700}
+.case{overflow:hidden}.case img{width:100%;height:230px;object-fit:cover}.case div{padding:28px}.testimonial{padding:30px}.testimonial strong{color:#fff}.contact-wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:start}.contact-panel{padding:42px}.contact-panel h2{font-size:42px;line-height:1.1;color:#fff;margin-bottom:14px}.contact-panel p{color:#b2bfd3}.form{padding:34px;background:#fff;color:#0f172a;border-radius:28px;box-shadow:0 35px 90px rgba(0,0,0,.38)}.form input,.form textarea,.form select{width:100%;padding:15px 16px;margin-bottom:14px;border:1px solid #d8e0eb;border-radius:14px;font-size:15px;outline:none}.form input:focus,.form textarea:focus,.form select:focus{border-color:var(--blue)}.form button{width:100%;padding:15px;border:0;border-radius:14px;background:#0f172a;color:#fff;font-weight:900;font-size:15px}
+footer{border-top:1px solid var(--line);padding:34px 0;color:var(--muted);text-align:center}.reveal{opacity:0;transform:translateY(32px)}.reveal.visible{opacity:1;transform:none;transition:.8s cubic-bezier(.2,.8,.2,1)}.float{animation:float 6s ease-in-out infinite}@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.cursor-glow{position:fixed;width:280px;height:280px;border-radius:50%;background:radial-gradient(circle,rgba(56,189,248,.16),transparent 62%);pointer-events:none;z-index:-1;transform:translate(-50%,-50%)}
+@media(max-width:900px){.nav-links{display:none}.hero-grid,.grid-2,.grid-3,.grid-4,.showcase,.contact-wrap{grid-template-columns:1fr}h1{font-size:44px}.hero{padding-top:130px}.hero-visual{height:360px}.shot.big,.shot.small{height:300px}.section-title h2{font-size:34px}}
+</style>
+</head>
+<body>
+<div class="cursor-glow" id="glow"></div>
+<header>
+<div class="container"><nav><div class="logo">FYN<span>X</span></div><div class="nav-links"><a href="#services">Services</a><a href="#work">Work</a><a href="#process">Process</a><a href="#case">Case Studies</a><a href="#contact">Contact</a></div><a class="btn" href="#contact">Contact Us</a></nav></div>
+</header>
+
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow reveal">Elite Digital Solutions for Growth-Focused Companies</div>
+<h1 class="reveal">Premium Digital Systems for <span class="gradient">Serious Business Growth</span></h1>
+<p class="reveal">FYNX designs high-impact marketing systems, refined web experiences, and full stack digital platforms built to help brands scale with confidence.</p>
+<div class="hero-actions reveal"><a class="btn" href="#contact">Contact Us</a><a class="btn secondary" href="#work">View Work</a></div>
+<div class="trust-row reveal"><div class="trust-item"><span>01</span> Strategy</div><div class="trust-item"><span>02</span> Development</div><div class="trust-item"><span>03</span> Marketing</div><div class="trust-item"><span>04</span> Growth</div></div>
+</div>
+<div class="hero-visual float reveal"><img src="https://images.unsplash.com/photo-1551434678-e076c223a692?auto=format&fit=crop&w=1000&q=80" alt="Premium digital agency team"><div class="floating-card fc1"><strong>Growth Architecture</strong><small>Marketing + Development</small></div><div class="floating-card fc2"><strong>Premium Execution</strong><small>Modern digital systems</small></div></div>
+</div>
+</section>
+
+<section id="services">
+<div class="container">
+<div class="grid-4 reveal" style="margin-bottom:70px"><div class="glass mini"><h3>Strategy</h3><p>Clear direction before execution.</p></div><div class="glass mini"><h3>Design</h3><p>Premium digital presentation.</p></div><div class="glass mini"><h3>Build</h3><p>Reliable technical delivery.</p></div><div class="glass mini"><h3>Scale</h3><p>Systems prepared for growth.</p></div></div>
+<div class="section-title reveal"><h2>Strategic Capabilities</h2><p>Specialized services built to improve positioning, efficiency, lead generation, and commercial performance.</p></div>
+<div class="grid-2">
+<div class="glass service reveal"><div class="icon">📈</div><h3>Digital Marketing</h3><p>Performance-driven campaigns, funnels, and content systems that attract qualified prospects and convert attention into measurable growth.</p><ul class="list"><li>Lead generation campaigns</li><li>Social media growth systems</li><li>Sales funnels and landing pages</li><li>Brand positioning strategy</li></ul></div>
+<div class="glass service reveal"><div class="icon">💻</div><h3>Full Stack Development</h3><p>Scalable websites, applications, dashboards, and automation workflows built with clean architecture and professional execution.</p><ul class="list"><li>Business websites</li><li>Web applications</li><li>Automation dashboards</li><li>AI-assisted workflows</li></ul></div>
+</div>
+</div>
+</section>
+
+<section id="work">
+<div class="container">
+<div class="section-title reveal"><h2>Visual Work Direction</h2><p>A premium visual standard designed for credibility, clarity, and a strong first impression.</p></div>
+<div class="showcase"><div class="shot big reveal" data-label="Premium Web Experience"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?auto=format&fit=crop&w=1200&q=80"></div><div><div class="shot small reveal" data-label="Analytics & Performance"><img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=900&q=80"></div><div class="shot small reveal" data-label="Business Strategy"><img src="https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=900&q=80"></div></div></div>
+</div>
+</section>
+
+<section id="process">
+<div class="container">
+<div class="section-title reveal"><h2>Delivery Framework</h2><p>A disciplined workflow that transforms ideas into polished, scalable, and performance-ready digital systems.</p></div>
+<div class="grid-4"><div class="glass process-card reveal"><span>01</span><h3>Discovery</h3><p>We understand business goals, audience, offers, and current challenges.</p></div><div class="glass process-card reveal"><span>02</span><h3>Strategy</h3><p>We define structure, messaging, design direction, and growth plan.</p></div><div class="glass process-card reveal"><span>03</span><h3>Execution</h3><p>We build the website, system, funnel, or automation with precision.</p></div><div class="glass process-card reveal"><span>04</span><h3>Optimization</h3><p>We improve performance, conversions, and long-term scalability.</p></div></div>
+</div>
+</section>
+
+<section>
+<div class="container metrics grid-4"><div class="glass reveal"><strong>2</strong><span>Core Services</span></div><div class="glass reveal"><strong>4</strong><span>Step Framework</span></div><div class="glass reveal"><strong>100%</strong><span>Responsive Design</span></div><div class="glass reveal"><strong>24/7</strong><span>Automation Potential</span></div></div>
+</section>
+
+<section id="case">
+<div class="container">
+<div class="section-title reveal"><h2>Impact Scenarios</h2><p>Business-focused examples of how strong digital systems can support visibility, efficiency, and revenue growth.</p></div>
+<div class="grid-2"><div class="case glass reveal"><img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=900&q=80"><div><h3>E-Commerce Growth</h3><p>Improved customer journey through refined landing pages, campaign structure, and lead-focused digital funnels.</p></div></div><div class="case glass reveal"><img src="https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=900&q=80"><div><h3>Business Automation</h3><p>Reduced manual processes through automated workflows, structured dashboards, and smart customer handling.</p></div></div></div>
+</div>
+</section>
+
+<section>
+<div class="container">
+<div class="section-title reveal"><h2>Client Experience</h2><p>A professional approach built around trust, clarity, and consistent communication.</p></div>
+<div class="grid-3"><div class="testimonial glass reveal"><p>“The overall presentation became more premium, structured, and business-ready.”</p><strong>Retail Business</strong></div><div class="testimonial glass reveal"><p>“Clear communication, clean execution, and a practical growth-focused process.”</p><strong>Service Company</strong></div><div class="testimonial glass reveal"><p>“The solution was organized around real business needs, not unnecessary complexity.”</p><strong>Startup Team</strong></div></div>
+</div>
+</section>
+
+<section id="contact">
+<div class="container contact-wrap">
+<div class="contact-panel glass reveal"><h2>Let’s Discuss Your Requirements</h2><p>Share your objectives and FYNX will respond with a clear direction for your digital growth strategy.</p><br><p><strong>Best for:</strong> companies that need stronger online presence, better marketing, professional websites, and intelligent automation.</p></div>
+<form class="form reveal" action="https://formspree.io/f/YOUR_FORM_ID" method="POST"><input type="text" placeholder="Full Name" required><input type="email" placeholder="Email Address" required><select><option>Select Service</option><option>Digital Marketing</option><option>Full Stack Development</option><option>Both Services</option></select><textarea rows="5" placeholder="Project Details"></textarea><button type="submit">Submit Details</button></form>
+</div>
+</section>
+
+<footer><div class="container"><p>© 2026 FYNX. Premium Digital Solutions.</p></div></footer>
+<script>
+const els=document.querySelectorAll('.reveal');
+const obs=new IntersectionObserver((entries)=>{entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible')})},{threshold:.18});
+els.forEach(el=>obs.observe(el));
+const glow=document.getElementById('glow');
+document.addEventListener('mousemove',e=>{glow.style.left=e.clientX+'px';glow.style.top=e.clientY+'px'});
+</script>
+</body>
+</html>
